@@ -101,6 +101,8 @@ get_header();?>
 				
 				<div class="heading heading__md heading__caps mb1 slide-down">Contact Us</div>
 				
+				<div class="copy"><?php echo $contact["copy"]; ?></div>
+				
 				<?php echo do_shortcode('[contact-form-7 id="2352" title="Contact" html_id="contact-form"]'); ?>
 				
 			</section>

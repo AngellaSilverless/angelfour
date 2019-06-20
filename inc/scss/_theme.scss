@@ -190,12 +190,10 @@
 				left: -5%;
 				transform: translate(20% , 0%);
 				opacity: 0;
-				transition-delay: 0s;
 				
 				&.visible {
 					transform: translateX(-10%);
 					opacity: 1;
-					transition-delay: 0.3s;
 				}
 			}
 		}
@@ -281,6 +279,7 @@
 	position: absolute;
 	width: 100%;
 	bottom: 0;
+	z-index: 999;
 	
 	.col {
 		text-align: center;
@@ -292,7 +291,7 @@
 		}
 	}
 	
-	.siverless .logo-holder #logo {
+	.silverless .logo-holder #logo {
 		width: 130px;
 	}
 }

@@ -56,10 +56,6 @@ jQuery(document).ready(function( $ ) {
 				currentDiv = newDiv;
 				requestAnimationFrame(updateAnimation);
 			}
-			
-			if(currentDiv.attr("id") == "our_wine") {
-				requestAnimationFrame(updateParallax);
-			}
 		}
 	}
 	
@@ -106,12 +102,6 @@ jQuery(document).ready(function( $ ) {
 				$("#shadow-bottles .animate").addClass("visible");
 			break;
 		}
-	}
-	
-	function updateParallax() {
-		$(".visible").css({
-			transform: "translate(-10%, " + latestKnownScrollY / 40 + "%)"
-		});
 	}
 
 	window.addEventListener('scroll', onScroll, false);	
