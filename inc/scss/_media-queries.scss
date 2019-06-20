@@ -1,0 +1,104 @@
+/*! == MEDIA QUERIES == */
+
+/*===========GRID COLUMNS==========*/
+
+@each $name, $size in $breakpoints {
+	
+	@media (max-width: #{$size}) {
+		
+		@for $i from 1 through $col-count {
+			
+			.container.cols-#{$name}-#{$i} >div {
+				grid-column: span $i;
+			}
+		}
+	}
+}
+
+/*===========EXTRA LARGE (1600px)==========*/
+
+@media only screen and (max-width: 1600px) {
+	
+/*---GLOBALS---*/ 
+
+/*---HEADER---*/
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+
+}/*---end large mq---*/
+
+/*===========LARGE (1200px)==========*/
+
+@media only screen and (max-width: 1200px) {
+	
+ /*---GLOBALS---*/ 
+
+/*---HEADER---*/ 
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+
+}/*---end large mq---*/
+
+/*===========MEDIUM (992px)==========*/
+
+@media only screen and (max-width: 992px) {
+  
+/*---GLOBALS---*/ 
+
+/*---HEADER---*/
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+  
+}/*---end medium mq---*/
+
+/*===========SMALL (768px)==========*/
+
+@media only screen and (max-width: 768px) {
+
+/*---GLOBALS---*/
+
+/*---HEADER---*/
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+
+}/*---end small mq---*/
+
+/*===========EXTRA SMALL (576px)==========*/
+
+@media only screen and (max-width: 576px) {
+
+/*---GLOBALS---*/
+
+/*---HEADER---*/
+
+/*---CONTENT---*/
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+
+}/*---end extra small mq---*/
+
+/*===========EXTRA SUPER SMALL (320px)==========*/
+
+@media only screen and (max-width: 320px) {
+  
+/*---GLOBALS---*/
+
+/*---HEADER---*/
+
+/*---CONTENT---*/
+
+/*---CONTENT---*/
+
+/*---FOOTER---*/
+  
+}/*---end extra small mq---*/

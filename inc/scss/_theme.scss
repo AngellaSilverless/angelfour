@@ -1,0 +1,303 @@
+/*! == THEME STYLES == */
+
+/*===========HEADER==========*/
+
+/*===========BODY==========*/
+
+#shadow-people, #shadow-bottles {
+	
+	.animate {
+		opacity: 0;
+		transition: opacity 0.7s linear;
+		
+		&.visible {
+			opacity: 0.85;
+		}
+	}
+	
+	.first-img {
+		transition-delay: 1.2s;
+	}
+	
+	.second-img {
+		transition-delay: 0.4s;
+	}
+	
+	.third-img {
+		transition-delay: 0s;
+	}
+	
+	.fourth-img {
+		transition-delay: 0.8s;
+	}
+}
+
+.shadow-people {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	filter: blur(3px);
+	transition: opacity 0.5s linear;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+	svg {
+		height: 95%;
+	}
+}
+
+.shadow-bottles {
+	position: absolute;
+	bottom: 0;
+	height: 110%;
+	left: 50%;
+	transform: translate(-73%, 0);
+	z-index: -1;
+	
+	#shadow-bottles {
+		height: 100%;
+		width: auto;
+	}
+}
+
+.menu {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 5em;
+	align-self: flex-end;
+	text-transform: uppercase;
+	
+	#menu-main {
+		text-align: right;
+		margin-right: 3em;
+		padding-right: 1em;
+		border-right: 1px solid hsla(0, 0%, 100%, 0.5);
+		
+		li {
+			list-style-type: none;
+			padding-top: 1em;
+			font-size: 0.8em;
+			letter-spacing: 0.12em;
+			transition: text-shadow	0.3s ease;
+			
+			&:first-of-type {
+				padding-top: 0;
+			}
+			
+			&.active {
+				text-shadow: 0.5px 0.5px 1px white, -0.5px 0.5px 1px white, 0.5px -0.5px 1px white, -0.5px -0.5px 1px white;
+			}
+			
+			a {
+				
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+.section {
+	min-height: 100vh;
+	
+	& > .heading {
+		padding-top: 5em;
+	}
+	
+	&#home_page {
+		grid-template-rows: 50% 50%;
+	}
+	
+	.logo {
+		width: 80%;
+		
+		svg {
+			width: 100%;
+			height: auto;
+		}
+		
+		.text {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			letter-spacing: 0.15em;
+		}
+	}
+	
+	.item {
+		position: relative;
+		
+		.icon {
+			position: absolute;
+			left: -2em;
+			transform: translateX(-50%);
+			
+			img {
+				height: 1.5em;
+			}
+		}
+	}
+}
+
+.animation {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 2em;
+	margin-left: 2em;
+	align-self: flex-end;
+	
+	.wrapper-images {
+		height: 90vh;
+		position: relative;
+		
+		figure {
+			margin: 0;
+			
+			&#wrapper-bottle {
+				height: 100%;
+				display: inline-block;
+			}
+		
+			&#wrapper-glass {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+			}
+		}
+			
+		img {
+			transition: $slowEffect;
+			
+			&.bottle {
+				filter: blur(0px);
+				
+				&.blurred {
+					transform: scale(0.8);
+					filter: blur(2px);
+				}
+			}
+			
+			&.glass {
+				position: absolute;
+				left: -5%;
+				transform: translate(20% , 0%);
+				opacity: 0;
+				transition-delay: 0s;
+				
+				&.visible {
+					transform: translateX(-10%);
+					opacity: 1;
+					transition-delay: 0.3s;
+				}
+			}
+		}
+	}
+}
+
+.scroll-content {
+	z-index: 3;
+}
+
+#contact-form {
+	
+	label {
+		position: relative;
+		
+		&:focus-within .label {
+			color: white;
+			transform: translateY(-2em);
+			padding-left: 0;
+		}
+	}
+	
+	p {
+		font-size: 1em;
+		margin: 0.8em 0;
+	}
+	
+	input, textarea {
+		font-size: 1em;
+		width: 100%;
+		padding: 0.5em;
+		outline: none;
+		border-radius: 2px;
+		border: none;
+	}
+	
+	.label {
+		position: absolute;
+		top: 1.6em;
+		color: black;
+		z-index: 999;
+		padding-left: 0.5em;
+		transition: $fastEffect;
+		
+		&.active {
+			color: white;
+			transform: translateY(-2em);
+			padding-left: 0;
+		}
+	}
+	
+	span.wpcf7-not-valid-tip {
+		color: hsla(0, 0%, 100%, 0.6);
+		font-weight: 100;
+	}
+	
+	div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
+		border-radius: 2px;
+		border: none;
+		background: hsla(0, 0%, 100%, 0.6);
+		color: black;
+		margin: 0;
+	}
+	
+	.wpcf7-submit {
+		display: inline-block;
+		background: none;
+		color: white;
+		border: 1px solid white;
+		width: unset;
+		padding: 0.5em 4em;
+		text-transform: uppercase;
+		font-weight: 100;
+		letter-spacing: 0.15em;
+		cursor: pointer;
+	}
+}
+
+/*===========FOOTER==========*/
+
+.footer {
+	padding: 1em 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	
+	.col {
+		text-align: center;
+	}
+	
+	.socials {
+		a:not(:first-of-type) {
+			padding-left: 1em;
+		}
+	}
+	
+	.siverless .logo-holder #logo {
+		width: 130px;
+	}
+}
+
+/*===========PAGE SPECIFIC==========*/
+
+/*===========VENDOR ADJUSTMENTS==========*/
+

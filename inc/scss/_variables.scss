@@ -1,0 +1,27 @@
+/*! == VARIABLES == */
+
+$brand-primary:    hsl(0, 0%, 100%);   /* Dark Red */
+$brand-secondary:  hsl(14, 100%, 28%); /* Mid Red  */
+$brand-tertiary:   hsl(187, 64%, 72%); /* Sky Blue */
+$brand-light-grey: hsl(0, 0%, 88%);
+$brand-mid-grey:   hsl(0, 0%, 79%);
+$brand-dark-grey:  hsl(0, 0%, 30%);
+
+$brand-font: 'Lato', sans-serif;
+$body-font: 'Lato', sans-serif;
+$supporting-font: 'Lato', sans-serif;
+
+$fastEffect: all .5s ease;
+$slowEffect: all 1s ease;
+
+$container-width: 1400px;
+$col-count: 12;
+$grid-gap: 4em;
+
+$breakpoints: (
+	xl: 1200px,
+	lg: 992px,
+	md: 768px,
+	sm: 576px,
+	xs: 350px
+);
