@@ -18,7 +18,7 @@ get_header();?>
 	
 	?>
 
-    <div class="home container fullwidth cols-2-5-5 pl2 pr2">
+    <div class="home container cols-2-5-5 pl2 pr2">
 		
 		<div class="col menu">
 			
