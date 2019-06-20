@@ -153,6 +153,7 @@ if( function_exists('acf_add_options_page') ) {
 function remove_menus(){
 
   remove_menu_page( 'edit-comments.php' );          //Comments
+  remove_menu_page( 'edit.php' );          //Comments
   
 }
 add_action( 'admin_menu', 'remove_menus' );
@@ -283,7 +284,6 @@ function reorder_admin_menu( $__return_true ) {
     return array(
 		'index.php',                     // Dashboard
 		'separator1',                    // --Space--
-		'edit.php',                      // Posts
 		'edit.php?post_type=page',       // Pages 
 		'separator2',                    // --Space--
 		'upload.php',                    // Media
