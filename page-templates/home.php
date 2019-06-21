@@ -18,7 +18,7 @@ get_header();?>
 	
 	?>
 
-    <div class="home container cols-2-5-5 pl2 pr2">
+    <div class="home container cols-2-5-5 pl2 cols-lg-3-5-4 cols-md-0-7-5 pr2">
 		
 		<div class="col menu">
 			
@@ -45,7 +45,7 @@ get_header();?>
 					
 				</div>
 				
-				<div class="col align-vert-b mb5 heading heading__md heading__caps mb1 slide-up"><?php echo $home["heading"]; ?></div>
+				<div class="col align-vert-b pb5 heading heading__md heading__caps mb1 slide-up title-home"><?php echo $home["heading"]; ?></div>
 				
 			</section>
 			

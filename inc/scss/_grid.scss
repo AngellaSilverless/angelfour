@@ -3,7 +3,7 @@
 .container {
     display:grid;
     grid-template-columns: repeat($col-count, 1fr);
-    grid-gap:$grid-gap;
+    grid-gap: $grid-gap;
     max-width: $container-width;
     margin: 0 auto;
 

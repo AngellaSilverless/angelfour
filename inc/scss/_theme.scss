@@ -75,6 +75,7 @@
 		text-align: right;
 		margin-right: 3em;
 		padding-right: 1em;
+		padding-left: 0;
 		border-right: 1px solid hsla(0, 0%, 100%, 0.5);
 		
 		li {
@@ -114,7 +115,7 @@
 	}
 	
 	.logo {
-		width: 80%;
+		width: 90%;
 		
 		svg {
 			width: 100%;
@@ -192,7 +193,7 @@
 				opacity: 0;
 				
 				&.visible {
-					transform: translateX(-10%);
+					transform: translateX(-20%);
 					opacity: 1;
 				}
 			}

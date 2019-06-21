@@ -52,6 +52,10 @@ jQuery(document).ready(function( $ ) {
 				}
 			});
 			
+			if(!newDiv) {
+				newDiv = $("#contact_us");
+			}
+			
 			if(!currentDiv || newDiv.attr("id") != currentDiv.attr("id")) {
 				currentDiv = newDiv;
 				requestAnimationFrame(updateAnimation);

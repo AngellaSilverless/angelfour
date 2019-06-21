@@ -15,15 +15,45 @@
 	}
 }
 
+/*===========ABOVE EXTRA LARGE (> 1600px)==========*/
+
+@media only screen and (min-width: 1601px) {
+	
+/*---GLOBALS---*/ 
+
+.container {
+	max-width: 2000px;
+	grid-gap: 4em;
+}
+
+.animation .wrapper-images img.glass.visible {
+	transform: translateX(-22%);
+}
+
+}
+
 /*===========EXTRA LARGE (1600px)==========*/
 
 @media only screen and (max-width: 1600px) {
 	
-/*---GLOBALS---*/ 
+/*---GLOBALS---*/
+
+.container {
+	max-width: $container-width;
+	grid-gap: 4em;
+}
+
+.menu #menu-main {
+	margin-right: 2em;
+}
 
 /*---HEADER---*/
 
 /*---CONTENT---*/
+
+.animation .wrapper-images img.glass.visible {
+	transform: translateX(-24%);
+}
 
 /*---FOOTER---*/
 
@@ -33,13 +63,50 @@
 
 @media only screen and (max-width: 1200px) {
 	
- /*---GLOBALS---*/ 
+/*---GLOBALS---*/ 
+ 
+body {
+	font-size: 0.9em;
+}
+ 
+.heading__md {
+	font-size: 1.5em;
+}
 
 /*---HEADER---*/ 
 
 /*---CONTENT---*/
 
+.container.cols-lg-3-5-4 {
+    
+    > .col {
+	    
+	    &:nth-of-type(3n - 2) {
+	        grid-column: span 3;      
+	    }
+		&:nth-of-type(3n - 1) {
+		    grid-column: span 5;     
+		}
+		&:nth-of-type(3n) {
+		    grid-column: span 4;     
+		}
+	}
+}
+
+.menu #menu-main {
+	margin-right: 1em;
+}
+
+.section .logo .text {
+	font-size: 1em;
+}
+
 /*---FOOTER---*/
+
+.footer {
+	position: relative;
+	margin-top: 1em;
+}
 
 }/*---end large mq---*/
 
@@ -47,7 +114,11 @@
 
 @media only screen and (max-width: 992px) {
   
-/*---GLOBALS---*/ 
+/*---GLOBALS---*/
+
+body {
+	font-size: 0.85em;
+}
 
 /*---HEADER---*/
 
@@ -63,9 +134,46 @@
 
 /*---GLOBALS---*/
 
+body {
+	font-size: 0.8em;
+}
+
 /*---HEADER---*/
 
 /*---CONTENT---*/
+
+.container.cols-md-0-7-5 {
+    
+    > .col {
+	    
+	    &:nth-of-type(3n - 2) {
+	        grid-column: span 0;     
+	    }
+		&:nth-of-type(3n - 1) {
+		    grid-column: span 7;     
+		}
+		&:nth-of-type(3n) {
+		    grid-column: span 5;     
+		}
+	}
+}
+
+.col.menu {
+	display: none;
+}
+
+.scroll-content {
+	margin-left: 4em;
+}
+
+.animation {
+	margin-left: 2em;
+	bottom: 5em;
+	
+	.wrapper-images {
+		height: 70vh;
+	}
+}
 
 /*---FOOTER---*/
 
@@ -81,9 +189,62 @@
 
 /*---CONTENT---*/
 
+.home.container {
+	display: block;
+	
+	.scroll-content {
+		margin: 0;
+	
+		.logo {
+			width: 80%;
+			margin: auto;	
+		}
+		
+		.title-home {
+			width: 75%;
+		}
+		
+		#our_wine .item {
+			margin-left: 2em;
+		}
+	}
+	
+	.animation {
+		z-index: -1;
+		
+		.wrapper-images {
+			height: 40vh;
+			width: 40%;
+			margin-left: auto;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			
+			#wrapper-bottle {
+				margin-left: 2em;
+			}
+			
+			img.glass.visible {
+				transform: translateX(-12%);
+			}
+		}
+	}
+}
+
 /*---CONTENT---*/
 
 /*---FOOTER---*/
+
+.footer {
+	
+	.container {
+		display: block;
+		
+		.col {
+			padding-top: 0.5em;
+		}
+	}
+}
 
 }/*---end extra small mq---*/
 
@@ -96,6 +257,19 @@
 /*---HEADER---*/
 
 /*---CONTENT---*/
+
+.home.container {
+	display: block;
+	
+	.scroll-content {
+		margin: 0;
+	
+		.logo {
+			width: 90%;
+			margin: auto;	
+		}
+	}
+}
 
 /*---CONTENT---*/
 
