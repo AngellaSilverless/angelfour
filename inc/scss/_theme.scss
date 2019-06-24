@@ -4,6 +4,15 @@
 
 /*===========BODY==========*/
 
+#background {
+	@include backgroundCover;
+	background-image: url("inc/img/grunge-background.jpg");
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+}
+
 #shadow-people, #shadow-bottles {
 	
 	.animate {

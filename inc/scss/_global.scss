@@ -17,9 +17,6 @@ body {
     line-height: 1.5;
     background: hsl(0, 0%, 1%);
     color: white;
-	@include backgroundCover;
-	background-image: url("inc/img/grunge-background.jpg");
-	background-attachment: fixed;
 }
 
 *, ::after, ::before {

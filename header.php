@@ -35,6 +35,8 @@
 
 <body <?php body_class(); ?>>
 	
+	<div id="background"></div>
+	
 	<div class="shadow-people">
 		<?php get_template_part('inc/img/shadow', 'people');?>
 	</div>
