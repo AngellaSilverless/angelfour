@@ -189,6 +189,10 @@ body {
 
 /*---CONTENT---*/
 
+#background {
+	background-position-x: 75% !important;
+}
+
 .home.container {
 	display: block;
 	
@@ -278,3 +282,11 @@ body {
 /*---FOOTER---*/
   
 }/*---end extra small mq---*/
+
+/*===========PORTRAIT DEVICES==========*/
+
+@media only screen and (max-aspect-ratio: 2/3) and (orientation:portrait) {
+	.animation .wrapper-images {
+		height: 50vh;
+	}
+}
