@@ -1,4 +1,4 @@
-<svg class="slide-down" version="1.1" baseProfile="tiny"
+<svg version="1.1" baseProfile="tiny"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="190.9px" height="48px" viewBox="0 0 190.9 48" xml:space="preserve">
 <defs>

@@ -7,7 +7,7 @@
 
 </main>
 
-	<div class="col socials">
+	<div class="col socials slow-fade">
 	
 	    <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
 	
@@ -37,7 +37,13 @@
 
             </div>
             
-            <div class="col terms">Terms & Conditions | Privacy Policy</div>
+            <div class="col terms">
+	            
+	            <a href="/terms-conditions">Terms & Conditions</a> | 
+	            
+	            <a href="/privacy-policy">Privacy Policy</a>
+	        
+	        </div>
     
         </div><!--container-->
     

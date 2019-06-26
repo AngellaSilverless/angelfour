@@ -37,7 +37,7 @@ get_header();?>
 					
 					<div class="col logo">
 						
-						<?php get_template_part('inc/img/angelfour', 'logo');?>
+						<div class="slide-down"><?php get_template_part('inc/img/angelfour', 'logo');?></div>
 						
 						<div class="text slow-fade">Sparkling wine<br>brut</div>
 					
