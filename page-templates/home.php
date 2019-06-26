@@ -33,7 +33,7 @@ get_header();?>
 			
 			<section class="section container no-gutter-c cols-12" id="home_page">
 				
-				<div class="col container no-gutter-c cols-12 align-vert-b cols-mb2">
+				<div class="col container no-gutter-c cols-12 align-vert-t cols-mb2">
 					
 					<div class="col logo">
 						
@@ -45,7 +45,7 @@ get_header();?>
 					
 				</div>
 				
-				<div class="col align-vert-b pb5 heading heading__md heading__caps mb1 slide-up title-home"><?php echo $home["heading"]; ?></div>
+				<div class="col mt2 heading heading__md heading__caps mb1 slide-up title-home"><?php echo $home["heading"]; ?></div>
 				
 			</section>
 			

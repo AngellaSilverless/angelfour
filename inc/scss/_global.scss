@@ -232,9 +232,11 @@ header {
         color: white;
       }
     }
-    
-    .socials {
-        text-align: right;
-    }
-    
-  }
+}
+
+.socials {
+    text-align: right;
+	position: fixed;
+	top: 1.5em;
+	right: 2em;
+}

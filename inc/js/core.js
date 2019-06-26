@@ -173,6 +173,14 @@ jQuery(document).ready(function( $ ) {
     $(".trigger-collapse").click(function(event) {
         $(this).closest('.expanding-copy').removeClass("expand");
     });
+    
+    $("#contact-form .wpcf7-text, #contact-form .wpcf7-textarea").focusin(function() {
+	    $(this).parents("label").addClass("focused");
+    });
+    
+    $("#contact-form .wpcf7-text, #contact-form .wpcf7-textarea").focusout(function() {
+	    $(this).parents("label").removeClass("focused");
+    });
 
 // ========== Add class if in viewport on page load
 

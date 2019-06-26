@@ -27,7 +27,7 @@
 }
 
 .animation .wrapper-images img.glass.visible {
-	transform: translateX(-22%);
+	transform: translateX(-12%);
 }
 
 }
@@ -52,7 +52,7 @@
 /*---CONTENT---*/
 
 .animation .wrapper-images img.glass.visible {
-	transform: translateX(-24%);
+	transform: translateX(-12%);
 }
 
 /*---FOOTER---*/
@@ -101,6 +101,26 @@ body {
 	font-size: 1em;
 }
 
+.title-home {
+	padding-bottom: 8em;
+}
+
+.home.container {
+	padding-right: 0;
+}
+
+.scroll-content {
+	padding-right: 2em;
+}
+
+.animation {
+	margin-left: 0;
+}
+
+.animation .wrapper-images img.glass.visible {
+	transform: translateX(-16%);
+}
+
 /*---FOOTER---*/
 
 .footer {
@@ -123,6 +143,11 @@ body {
 /*---HEADER---*/
 
 /*---CONTENT---*/
+
+
+.animation .wrapper-images img.glass.visible {
+	transform: translateX(-14%);
+}
 
 /*---FOOTER---*/
   
@@ -216,11 +241,13 @@ body {
 	}
 	
 	.animation {
+		position: fixed;
+		right: 0;
 		z-index: -1;
 		
 		.wrapper-images {
 			height: 40vh;
-			width: 50%;
+			width: 40%;
 			margin-left: auto;
 			position: absolute;
 			right: 0;
@@ -230,8 +257,12 @@ body {
 				margin-left: 2em;
 			}
 			
+			img.glass {
+				transform: translate(30%, 0%);
+			}
+			
 			img.glass.visible {
-				transform: translateX(-12%);
+				transform: translateX(8%);
 			}
 		}
 	}
@@ -248,7 +279,12 @@ body {
 		
 		.col {
 			padding-top: 0.5em;
+			text-align: center;
 		}
+	}
+	
+	.colophon {
+		margin-left: 0;
 	}
 }
 
@@ -285,7 +321,13 @@ body {
 
 /*===========PORTRAIT DEVICES==========*/
 
-@media only screen and (max-aspect-ratio: 2/3) and (orientation:portrait) {
+@media only screen and (max-aspect-ratio: 6/5) {
+	.animation .wrapper-images {
+		height: 70vh;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 3/3) {
 	.animation .wrapper-images {
 		height: 50vh;
 	}

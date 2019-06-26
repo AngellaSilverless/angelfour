@@ -7,6 +7,16 @@
 
 </main>
 
+	<div class="col socials">
+	
+	    <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
+	
+	    <a href="<?php the_sub_field('page_link'); ?>"><i class="fab fa-<?php the_sub_field('name'); ?>"></i></a>
+	
+	    <?php endwhile; endif; ?>
+	
+	</div>
+
     <footer class="footer">
 	            
         <div class="container cols-4">
@@ -26,16 +36,8 @@
                 </div>
 
             </div>
-
-            <div class="col socials">
-
-                <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
-
-                <a href="<?php the_sub_field('page_link'); ?>"><i class="fab fa-<?php the_sub_field('name'); ?>"></i></a>
-
-                <?php endwhile; endif; ?>
-
-            </div>
+            
+            <div class="col terms">Terms & Conditions | Privacy Policy</div>
     
         </div><!--container-->
     

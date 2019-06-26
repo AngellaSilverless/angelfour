@@ -53,6 +53,7 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+	z-index: -1;
 	
 	svg {
 		height: 95%;
@@ -63,8 +64,7 @@
 	position: absolute;
 	bottom: 0;
 	height: 110%;
-	left: 50%;
-	transform: translate(-73%, 0);
+	right: 0;
 	z-index: -1;
 	
 	#shadow-bottles {
@@ -76,6 +76,7 @@
 .menu {
 	position: -webkit-sticky;
 	position: sticky;
+	z-index: 200;
 	bottom: 5em;
 	align-self: flex-end;
 	text-transform: uppercase;
@@ -124,6 +125,7 @@
 	}
 	
 	.logo {
+		padding-top: 25vh;
 		width: 90%;
 		
 		svg {
@@ -137,6 +139,10 @@
 			font-size: 1.5em;
 			letter-spacing: 0.15em;
 		}
+	}
+	
+	.title-home {
+		padding: 0;
 	}
 	
 	.item {
@@ -219,7 +225,7 @@
 	label {
 		position: relative;
 		
-		&:focus-within .label {
+		&.focused .label {
 			color: white;
 			transform: translateY(-2em);
 			padding-left: 0;
@@ -284,6 +290,14 @@
 
 /*===========FOOTER==========*/
 
+.socials {
+	padding-right: 0.5em;
+	
+	a:not(:first-of-type) {
+		padding-left: 1em;
+	}
+}
+	
 .footer {
 	padding: 1em 0;
 	position: absolute;
@@ -295,10 +309,8 @@
 		text-align: center;
 	}
 	
-	.socials {
-		a:not(:first-of-type) {
-			padding-left: 1em;
-		}
+	.terms {
+		font-size: 0.9em;
 	}
 	
 	.silverless .logo-holder #logo {
@@ -310,3 +322,20 @@
 
 /*===========VENDOR ADJUSTMENTS==========*/
 
+.age-gate-submit-yes, .age-gate-submit-no {
+	border: none;
+	display: inline-block;
+	background: none;
+	color: white;
+	padding: 0.5em 4em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 0.9em;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.age-gate-form {
+	border-radius: 15px;
+}
