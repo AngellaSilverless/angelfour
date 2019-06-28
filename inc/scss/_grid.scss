@@ -132,3 +132,19 @@
 	}
 }
 
+.container.cols-2-8-2 {
+    
+    > .col {
+	    
+	    &:nth-of-type(3n - 2) {
+	        grid-column: span 2;      
+	    }
+		&:nth-of-type(3n - 1) {
+		    grid-column: span 8;     
+		}
+		&:nth-of-type(3n) {
+		    grid-column: span 2;     
+		}
+	}
+}
+

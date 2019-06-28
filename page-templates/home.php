@@ -97,7 +97,7 @@ get_header();?>
 				
 			</section>
 			
-			<section class="section" id="contact_us">
+			<section class="section pb5" id="contact_us">
 				
 				<div class="heading heading__md heading__caps mb1 slide-down">Contact Us</div>
 				

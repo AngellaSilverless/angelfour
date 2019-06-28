@@ -195,48 +195,45 @@ header {
 
 /*===========FOOTER==========*/
 
-.pre-socket {
-    
-    .container {
-	    
-	    h3 {
-		    font-size: 1.5em;
-	    }
-    }
-}
-
-.socket {
-    width:100%;
-    padding: 2em;
-    font-size: 0.75em;
-    color: white;
-    
-    a {
-        color: white;
-        
-        &:hover {
-            color: $brand-secondary;
-        }
-    }
-    
-    i {
-      margin-right: 1em;
-    }
-        
-    &__colophon {
-
-      a {
-        margin-left:0.5em;
-        padding-left:0.5em;
-        border-left: 1px solid $brand-mid-grey;
-        color: white;
-      }
-    }
-}
-
-.socials {
-    text-align: right;
+.footer {
+	padding: 1em 0;
 	position: fixed;
-	top: 1.5em;
-	right: 2em;
+	width: 100%;
+	bottom: 0;
+	z-index: 999;
+	background: black;
+	box-shadow: 0 -5px 5px -5px black;
+	
+	.colophon {
+		display: flex;
+		align-items: center;
+		margin-left: 2em;
+		font-size: 0.7em;
+	
+		a {
+			margin-left: 1em;
+			margin-right: 1em;
+			color: white;
+		}
+		
+		span {
+			margin-right: 1em;
+		}
+	}
+	
+	.silverless {
+		padding-right: 3em;
+	}
+	
+	.socials {
+		text-align: left;
+		
+		a:not(:first-of-type) {
+			padding-left: 1em;
+		}
+		
+		i {
+			font-size: 1.5em;
+		}
+	}
 }

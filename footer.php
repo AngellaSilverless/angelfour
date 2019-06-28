@@ -7,21 +7,9 @@
 
 </main>
 
-	<div class="col socials slow-fade">
-	
-	    <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
-	
-	    <a href="<?php the_sub_field('page_link'); ?>"><i class="fab fa-<?php the_sub_field('name'); ?>"></i></a>
-	
-	    <?php endwhile; endif; ?>
-	
-	</div>
-
     <footer class="footer">
 	            
-        <div class="container cols-4">
-
-            <div class="col colophon">&copy; Angel & Four <?php echo date ('Y');?></div>
+        <div class="container cols-2-8-2 cols-lg-3-6-3 cols-sm-5-7-0">
 
             <div class="col silverless">
                 
@@ -36,14 +24,26 @@
                 </div>
 
             </div>
-            
-            <div class="col terms">
+
+            <div class="col colophon">
 	            
-	            <a href="/terms-conditions">Terms & Conditions</a> | 
+	            <span>&copy; Angel & Four <?php echo date ('Y');?></span> | 
+            
+            	<a href="/terms-conditions">Terms & Conditions</a> | 
 	            
 	            <a href="/privacy-policy">Privacy Policy</a>
-	        
-	        </div>
+            
+            </div>
+            
+            <div class="col socials">
+	
+			    <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
+			
+			    <a href="<?php the_sub_field('page_link'); ?>"><i class="fab fa-<?php the_sub_field('name'); ?>"></i></a>
+			
+			    <?php endwhile; endif; ?>
+			
+			</div>
     
         </div><!--container-->
     
